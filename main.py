@@ -11,7 +11,7 @@ import json
 # MongoDB setup
 load_dotenv()
 
-DISCORD_TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("TOKEN")
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["discord_bot"]
@@ -258,4 +258,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Run the bot
-bot.run("DISCORD_TOKEN")
+bot.run("TOKEN")
