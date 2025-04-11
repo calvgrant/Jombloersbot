@@ -11,7 +11,7 @@ import json
 # MongoDB setup
 load_dotenv()
 
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+DISCORD_TOKEN = os.getenv("TOKEN")
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["discord_bot"]
